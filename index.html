@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="styles/styles.css">
+       <title>Decodificador</title>
+   </head>
+   <body>
+      <header>
+      </header>
+
+      <main class="conteudo">
+         <img class="logo" src="assets/logo.png" alt="Figura do logo da Alura.">
+         <div class="msg__entrada">
+            <textarea id="msg-entrada" name="msg-entrada" rows="25" cols="50" placeholder="digite seu texto"></textarea>
+            <label for="msg-entrada" id="frase-orientacao"><img src="assets/exclamacao.png" alt="Figura de exclamação.">Apenas letras minúsculas e sem acento.</label>
+
+            <div class="msg__entrada__botoes">
+               <button class="botoes" id="btn-cripto"   onclick="btn_cripto_decripto(this)">Criptografar</button>
+               <button class="botoes" id="btn-decripto" onclick="btn_cripto_decripto(this)">Descriptografar</button>
+            </div>
+         </div>
+         <div class="msg__saida">
+            <div class="msg__saida__nenhuma">
+               <img id="imagem" src="assets/imagem.svg" alt="Figura de uma menina sentada sobre as pernas e com lupa na mão.">
+               <p id="nenhuma-msg-status">Nenhuma mensagem encontrada</p>
+               <p id="nenhuma-msg-orientacao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="msg__saida__copiar">
+               <p id="msg-saida-copiar-texto">????Criptografia?????</p>
+               <button class="botoes" id="btn-copiar" onclick="copiarMsg()">Copiar</button>
+            </div>
+         </div>
+      </main>
+
+      <footer>
+         <div id="autoral"><p>Desenvolvido por Marcelo Pena sob orientação da Alura. 2024</p></div>
+      </footer>
+       
+       <script src="scripts/criptografar.js"></script>
+
+   </body>
+</html>
